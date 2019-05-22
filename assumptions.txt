@@ -5,7 +5,18 @@ EXPLANATION 01:
     A tweet is read in from a file with the username. Coding up the solution, my program will exclude the userName from
     the tweet.
 
-ASSUMPTION 01:
+
+ASSUMPTION 02:
+    All usernames are unique
+
+
+ASSUMPTION 03:
+    Tweets file only contains valid users
+EXPLANATION 03:
+    Valid users are users that are defined in the users.txt file
+
+
+
 
 
 
