@@ -80,7 +80,6 @@ public class FileReaders {
         }
     }
 
-    //TODO: ADD AN ERROR WHEN FILE IS EMPTY
     private void processTweetFile(final FileReader fileReader) throws UserException, InvalidTweetException, TwitterOperationException {
         try {
             BufferedReader reader = new BufferedReader(fileReader);
@@ -89,8 +88,6 @@ public class FileReaders {
             while (input_line != null) {
                 if (!input_line.isEmpty()) {
                     Pair<String, String> extracted_values = generatePair(input_line, TWEET_DELIMITER);
-                    //TODO: ASSUMPTION THE USER-NAME NOT PART OF TWEET
-                    //TODO: EXCEPTION WHEN TWEET > 140 CHAR
                     twitter.addTweet(
                             extracted_values.getKey(),
                             extracted_values.getValue()

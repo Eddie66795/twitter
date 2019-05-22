@@ -49,6 +49,6 @@ public class TweetsTest {
         String faultyTweet5Text = new String(new char[141]).replace('\0', 'a');
         Tweets faultyTweet5 = new Tweets("Ward", faultyTweet5Text);
         faultyTweet5.isValid();
-        Assert.assertEquals("VIOLATION: TEXTVALUE > 140 CHARS", faultyTweet4.getViolationMessage());
+        Assert.assertEquals("VIOLATION: TEXTVALUE > 140 CHARS", faultyTweet5.getViolationMessage());
     }
 }

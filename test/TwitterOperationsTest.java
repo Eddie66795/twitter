@@ -55,7 +55,7 @@ public class TwitterOperationsTest {
         Assert.assertEquals(1, currentUser.getUserTweets().size());
     }
 
-    @Test(expected = main.twitter.error.UserException.class)
+    @Test(expected = main.twitter.error.TwitterOperationException.class)
     public void assertUserTweetsRaisesException() throws UserException, InvalidTweetException, TwitterOperationException {
         String currentUserName = "Ward";
         String tweetText = "TEST";
