@@ -1,0 +1,8 @@
+To run the program:
+# Assume user is in the home directory i.e. ../twitter/
+
+COMMAND #1
+$ cd src
+
+COMMAND #2
+$ python runScript.py --users {PATH TO USER_FILE}  --tweets {PATH TO TWEETS_FILE}
